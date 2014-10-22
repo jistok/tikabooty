@@ -16,7 +16,7 @@ or run named entity recognition (NER) on the result (or, dump it into a data sto
 The response will include the file name, plus any headers found in the document, and
 a "content" field, which will contain the entire text found within the file.  The
 output is currently formatted as `field_name + TAB + field_value + '\n'`.
-*Note that, if you deploy to Cloud Foundry, you can use either "https" or "http".*
+**Note that, if you deploy to Cloud Foundry, you can use either `https` or `http`.**
 
 When the client invokes this service, it is, in effect, *making a tikabooty call*.
 
