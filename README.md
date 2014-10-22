@@ -23,8 +23,11 @@ When the client invokes this service, it is, in effect, *making a tikabooty call
 Deploy in Cloud Foundry:
 
 `$ mvn package`
+
 `$ cf login`
+
 `$ cf push tikabooty -p ./target/tikabooty-0.0.1-SNAPSHOT.jar`
+
 
 * Memory: `-Xmx256m` seems to work, subject to the caveat that certain PDF documents will cause OOM issues.
   Here are references on that: https://issues.apache.org/jira/browse/PDFBOX-1907,
