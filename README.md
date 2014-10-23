@@ -36,6 +36,7 @@ Deploy in Cloud Foundry:
 * Deploy in Jetty, not Tomcat, which has an issue with closing InputStream
 * Supported formats (Apache Tika 1.6): http://tika.apache.org/1.6/formats.html
 * http://start.spring.io/ was used to bootstrap this Spring Boot project
+* Potentially interesting reading (have yet to read, though): http://plainoldobjects.com/2014/04/01/building-microservices-with-spring-boot-part1/
 
 * TODO
   - Figure out how to eliminate the need to send the name "file" and just POST the content(?)
