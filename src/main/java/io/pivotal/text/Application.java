@@ -121,6 +121,12 @@ public class Application extends SpringBootServletInitializer {
                       writer.append(key + "\t" + value + "\n");
                     }
                   }
+                  // Add CF_INSTANCE_INDEX value
+                  String instanceIndex = System.getenv("CF_INSTANCE_INDEX");
+                  if (instanceIndex == null) {
+                    instanceIndex = "[null]"; 
+                  }
+                  writer.append("CF_INSTANCE_INDEX: " + instanceIndex + "\n");
                   writer.append("content" + "\t" + bas.toString("UTF-8").replaceAll("\\t", "  "));
                 } catch (Exception e) {
                   e.printStackTrace();
